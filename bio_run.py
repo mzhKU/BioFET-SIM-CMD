@@ -55,10 +55,12 @@ def check_args():
         adjust(target, val)
     # Generic error message.
     else:
+        print "***************************************************"
         print "BioFET-SIM usage:"
         print "$ python bio_run.py --calc <input.bfs>"
         print "or"
         print "$ python bio_run.py --set <param> <val> <input.bfs>"
+        print "***************************************************"
         return False
 # ------------------------------------------------------------------------ 
 
