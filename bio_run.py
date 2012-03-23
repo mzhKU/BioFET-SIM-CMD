@@ -4,6 +4,8 @@
 # DESCRIPTION:
 # ........................................................................
 # Command line version of the multiple charge BioFET-SIM program.
+# The program is run by either choosing the --calc option or the
+# --set option.
 # Run by entering the below statement on the command line:
 # python bio_run.py <INPUT.PY>
 # ------------------------------------------------------------------------ 
