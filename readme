@@ -1,1 +1,28 @@
-"READme of master branch"
+************************************
+BioFET-SIM Command Line Version (CMD)
+************************************
+
+This is the Github repository for the command line version
+of the BioFET-SIM method.
+
+
+Please cite the following articles in work making use of the method:
+http://pubs.rsc.org/en/Content/ArticleLanding/2011/NR/c0nr00442a
+http://pubs.rsc.org/en/Content/ArticleLanding/2011/NR/c1nr10316d
+http://arxiv.org/abs/1204.6140
+
+
+You can find an introduction to the method at the following URL:
+http://proteinsandwavefunctions.blogspot.dk/2012/05/biofet-sim-web-interface-implementation.html
+
+
+The webinterface to the BioFET-SIM method can be found at:
+http://www.biofetsim.org
+
+Example of command line screening of variable:
+$ for i in {9738937,973893,97389,9738,937}
+  do
+    python bio_run.py --set num_prot $i 1AVD.bfs
+    python bio_run.py --calc 1AVD.bfs
+  done
+Use 'grep' to parse for sensitivity output
