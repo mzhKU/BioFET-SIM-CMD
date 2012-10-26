@@ -1,6 +1,6 @@
 #!/bin/bash
-input="1ssk-11.00-neg.bfs"
-for i in {1..300}
+input="1ssk-07.40-pos.bfs"
+for i in {100..300}
 do
     python -c "print $i/100.0"
     #a=`python -c "print $i/100.0"`
